@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/main_background" />
+
+    //кнопки действий
+    <LinearLayout
+        android:id="@+id/actionLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/button_action1"
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/button_action"
+            android:text="@string/action_1.1"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="650dp" />
+
+        <Button
+            android:id="@+id/button_action2"
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/button_action"
+            android:text="@string/action_1.2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="650dp" />
+    </LinearLayout>
+
+    //кнопка в главное меню
+    <LinearLayout
+        android:id="@+id/startLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="820dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_start"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/main_menu"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="200dp" />
+    </LinearLayout>
+
+    //текст
+    <LinearLayout
+        android:id="@+id/text1Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="700dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/startText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="25dp"
+            android:text="@string/text_1"
+            android:textColor="@color/text_white"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="600dp" />
+    </LinearLayout>
+
+</RelativeLayout>
